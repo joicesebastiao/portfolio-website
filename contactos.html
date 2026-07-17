@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contactos | Joice Sebastião</title>
+<link rel="stylesheet" href="css/style.css?v=9">
+</head>
+<body>
+
+<div class="navbar-wrap">
+  <div class="navbar-shell">
+    <nav class="navbar">
+      <button class="navbar__toggle" aria-label="Abrir menu">&#9776;</button>
+      <ul class="navbar__links">
+        <li><a href="index.html">Página Inicial</a></li>
+        <li class="has-dropdown">
+          <a href="servicos.html">Serviços</a>
+          <ul class="dropdown">
+            <li><a href="servicos/segmentacao-clientes.html">Segmentação de Clientes</a></li>
+            <li><a href="servicos/classificacao-risco-credito.html">Classificação de Risco de Crédito</a></li>
+            <li><a href="servicos/previsao-vendas.html">Previsão de Vendas</a></li>
+          </ul>
+        </li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="como-trabalhamos.html">Como Trabalhamos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contactos.html" class="is-active">Contactos</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<header class="hero" style="padding-bottom:56px;">
+  <div class="container">
+    <span class="hero__eyebrow">Vamos falar</span>
+    <h1><em>Contactos</em></h1>
+    <p class="hero__lead">Marque uma chamada de 30 minutos, sem compromisso, ou envie os detalhes do seu desafio pelo formulário.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container contact-grid">
+    <div>
+      <dl class="contact-list">
+        <div>
+          <dt>Email</dt>
+          <dd><a href="mailto:contacto@joicesebastiao.pt">contacto@joicesebastiao.pt</a></dd>
+        </div>
+        <div>
+          <dt>LinkedIn</dt>
+          <dd><a href="#">linkedin.com/in/joicesebastiao</a></dd>
+        </div>
+        <div>
+          <dt>Localização</dt>
+          <dd>Portugal &middot; Remoto</dd>
+        </div>
+      </dl>
+    </div>
+
+    <form action="mailto:contacto@joicesebastiao.pt" method="post" enctype="text/plain">
+      <div class="form-field">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-field">
+        <label for="empresa">Empresa (opcional)</label>
+        <input type="text" id="empresa" name="empresa">
+      </div>
+      <div class="form-field">
+        <label for="mensagem">Como posso ajudar?</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar mensagem &rarr;</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__row">
+      <span class="footer__brand">Joice Sebastião</span>
+      <div class="footer__links">
+        <a href="servicos.html">Serviços</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="mailto:contacto@joicesebastiao.pt">contacto@joicesebastiao.pt</a>
+      </div>
+    </div>
+    <p class="footer__meta">&copy; 2026 Joice Sebastião. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/script.js?v=3"></script>
+</body>
+</html>
