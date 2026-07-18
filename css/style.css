@@ -9,7 +9,6 @@
   --text-muted: #6f6a5c;
   --on-primary: #ffffff;
   --line: rgba(33, 28, 21, 0.13);
-  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   --font-serif: 'Fraunces', serif;
   --font-sans: 'Inter', sans-serif;
   --max-width: 1120px;
@@ -86,7 +85,7 @@ ul {
 }
 
 .btn-primary {
-  background: var(--gradient-primary);
+  background: var(--color-primary);
   color: var(--on-primary);
 }
 
@@ -238,7 +237,7 @@ ul {
 
 /* Hero */
 .hero {
-  background: var(--gradient-primary);
+  background: var(--color-primary);
   color: var(--on-primary);
   border-radius: 0;
   padding: 64px 0;
@@ -262,6 +261,7 @@ ul {
 
 .hero h1 em {
   font-style: italic;
+  color: #f3dfae;
 }
 
 .hero__lead {
@@ -362,7 +362,7 @@ ul {
 }
 
 .image-grid__item {
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.7s cubic-bezier(0.2, 0.7, 0.3, 1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .image-grid__item:hover {
@@ -397,7 +397,7 @@ ul {
   border-radius: 20px;
   padding: 26px 26px 28px;
   overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, opacity 0.7s cubic-bezier(0.2, 0.7, 0.3, 1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .service-card:hover {
@@ -450,7 +450,7 @@ ul {
   gap: 20px;
   padding: 28px 0;
   border-top: 1px solid var(--line);
-  transition: padding-left 0.2s ease, opacity 0.7s cubic-bezier(0.2, 0.7, 0.3, 1), transform 0.7s cubic-bezier(0.2, 0.7, 0.3, 1);
+  transition: padding-left 0.2s ease;
 }
 
 .service-row:last-child {
@@ -502,7 +502,7 @@ ul {
 }
 
 .card--project {
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, opacity 0.7s cubic-bezier(0.2, 0.7, 0.3, 1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .card--project:hover {
@@ -583,7 +583,7 @@ ul {
 
 /* CTA banner (brand block) */
 .cta-banner {
-  background: var(--gradient-primary);
+  background: var(--color-primary);
   color: var(--on-primary);
   padding: 40px 0;
 }
@@ -675,7 +675,6 @@ ul {
   width: 100%;
   justify-content: center;
   margin-top: 28px;
-  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease, opacity 0.7s cubic-bezier(0.2, 0.7, 0.3, 1);
 }
 
 .project-meta--vertical {
@@ -715,7 +714,7 @@ ul {
   border: 1px solid var(--line);
   border-radius: 14px;
   padding: 28px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, opacity 0.7s cubic-bezier(0.2, 0.7, 0.3, 1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .deliverable-card:hover {
@@ -761,7 +760,7 @@ ul {
 }
 
 .result-card {
-  background: var(--gradient-primary);
+  background: var(--color-primary);
   color: var(--on-primary);
   border-radius: 14px;
   padding: 28px;
