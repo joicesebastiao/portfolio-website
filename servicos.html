@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Serviços | Joice Sebastião</title>
-<link rel="stylesheet" href="css/style.css?v=9">
+<link rel="stylesheet" href="css/style.css?v=40">
 </head>
 <body>
 
@@ -14,18 +14,17 @@
       <button class="navbar__toggle" aria-label="Abrir menu">&#9776;</button>
       <ul class="navbar__links">
         <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="servicos.html" class="is-active">Serviços</a></li>
         <li class="has-dropdown">
-          <a href="servicos.html" class="is-active">Serviços</a>
+          <a href="projetos.html">Projetos</a>
           <ul class="dropdown">
-            <li><a href="servicos/segmentacao-clientes.html">Segmentação de Clientes</a></li>
-            <li><a href="servicos/classificacao-risco-credito.html">Classificação de Risco de Crédito</a></li>
-            <li><a href="servicos/previsao-vendas.html">Previsão de Vendas</a></li>
+            <li><a href="projetos/segmentacao-centro-comercial.html">Clustering de Clientes</a></li>
+            <li><a href="projetos/classificação-de-risco-banca.html">Classificação de Risco de Crédito</a></li>
           </ul>
         </li>
-        <li><a href="projetos.html">Projetos</a></li>
         <li><a href="como-trabalhamos.html">Como Trabalhamos</a></li>
         <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="contactos.html">Contactos</a></li>
+        <li><a href="contactos.html" class="navbar__cta">Contactos</a></li>
       </ul>
     </nav>
   </div>
@@ -45,26 +44,18 @@
       <div class="service-row">
         <span class="service-row__index">01</span>
         <div>
-          <h3>Segmentação de Clientes</h3>
-          <p>Segmentos claros, com perfil e potencial de valor definidos, para campanhas mais eficazes.</p>
+          <h3>Avaliação de Risco e Perfil de Cliente</h3>
+          <p>Segmentação de clientes e classificação de risco de crédito, para campanhas e decisões mais informadas.</p>
         </div>
-        <a href="servicos/segmentacao-clientes.html" class="link-arrow">Saber mais &rarr;</a>
+        <button type="button" class="link-arrow" data-modal-open="modal-avaliacao-risco">Saber mais &rarr;</button>
       </div>
       <div class="service-row">
         <span class="service-row__index">02</span>
         <div>
-          <h3>Classificação de Risco de Crédito</h3>
-          <p>Clientes classificados por nível de risco, para decisões de crédito mais rápidas e informadas.</p>
+          <h3>Previsão de Vendas e Procura</h3>
+          <p>Estimativas de vendas e procura baseadas nos seus dados, para um planeamento mais preciso e eficiente.</p>
         </div>
-        <a href="servicos/classificacao-risco-credito.html" class="link-arrow">Saber mais &rarr;</a>
-      </div>
-      <div class="service-row">
-        <span class="service-row__index">03</span>
-        <div>
-          <h3>Previsão de Vendas</h3>
-          <p>Estimativas de vendas baseadas nos seus dados, para um planeamento mais preciso e eficiente.</p>
-        </div>
-        <a href="servicos/previsao-vendas.html" class="link-arrow">Saber mais &rarr;</a>
+        <button type="button" class="link-arrow" data-modal-open="modal-previsao-vendas">Saber mais &rarr;</button>
       </div>
     </div>
   </div>
@@ -92,6 +83,99 @@
   </div>
 </footer>
 
-<script src="js/script.js?v=3"></script>
+<div class="modal-overlay" id="modal-avaliacao-risco">
+  <div class="modal">
+    <div class="modal__header">
+      <button type="button" class="modal__close" data-modal-close aria-label="Fechar">&times;</button>
+      <h3>Avaliação de Risco e Perfil de Cliente</h3>
+      <p>Perceba quem são os seus clientes e qual o risco de cada decisão — da segmentação à classificação de risco de crédito.</p>
+    </div>
+    <div class="modal__body">
+      <div class="modal__tabs">
+        <button type="button" class="modal__tab is-active" data-tab="segmentacao">Segmentação de Clientes</button>
+        <button type="button" class="modal__tab" data-tab="risco-credito">Classificação de Risco de Crédito</button>
+      </div>
+
+      <div class="modal__panel is-active" data-panel="segmentacao">
+        <p>Como identificar os clientes certos para a campanha certa?</p>
+        <p>Empresas que tratam todos os clientes com a mesma abordagem tendem a perder receitas: campanhas genéricas têm baixa conversão, orçamento de marketing é desperdiçado e os clientes de maior valor não recebem a atenção diferenciada.</p>
+        <h4>Como esta solução se aplica ao seu negócio</h4>
+        <ul class="detail-list">
+          <li><strong>Retalho:</strong> Segmentação de clientes para campanhas e otimização do layout de loja.</li>
+          <li><strong>Banca / Microfinanças:</strong> Perfis de risco e identificação de oportunidades de crédito.</li>
+          <li><strong>Telecomunicações:</strong> Segmentação de clientes para retenção e upsell de pacotes.</li>
+          <li><strong>Logística:</strong> Segmentação de clientes para retenção, otimização de rotas e crescimento de receita.</li>
+        </ul>
+        <h4>O que inclui</h4>
+        <ul class="check-list">
+          <li>Segmentos de clientes claros, com perfil e potencial de valor definidos.</li>
+          <li>Recomendações de abordagem por segmento.</li>
+          <li>Dashboard interativo para explorar os resultados.</li>
+          <li>Acompanhamento periódico da evolução do portfólio.</li>
+        </ul>
+        <p class="detail-note">"O acompanhamento contínuo mostra como a composição da sua base de clientes evolui — se o segmento de maior valor está a crescer ou a diminuir."</p>
+      </div>
+
+      <div class="modal__panel" data-panel="risco-credito">
+        <p>Sabe quais dos seus clientes têm mais risco de não pagar? </p>
+        <p>Conceder crédito sem uma avaliação de risco sólida tem custos elevados: incumprimentos que não foram antecipados, tempo gasto a rever manualmente todos os pedidos da mesma forma, e oportunidades perdidas com bons clientes tratados como se fossem de risco elevado.</p>
+        <h4>Como esta solução se aplica ao seu negócio</h4>
+        <ul class="detail-list">
+          <li><strong>Banca / Microfinanças:</strong> Avaliação de risco de crédito para novos pedidos de empréstimo.</li>
+          <li><strong>Seguros:</strong> Avaliação de risco na subscrição de apólices e definição de prémios.</li>
+          <li><strong>Retalho:</strong> Aprovação de crédito ao consumo ou planos de pagamento faseado.</li>
+        </ul>
+        <h4>O que inclui</h4>
+        <ul class="check-list">
+          <li>Modelo de classificação de risco ajustado ao seu histórico de dados.</li>
+          <li>Pontuação de risco (score) por cliente ou pedido.</li>
+          <li>Dashboard para acompanhar decisões e taxas de incumprimento.</li>
+          <li>Revisão periódica do modelo à medida que novos dados chegam.</li>
+        </ul>
+        <p class="detail-note">"Um modelo de risco bem calibrado também identifica bons clientes que estavam a ser tratados com excesso de cautela."</p>
+      </div>
+    </div>
+    <div class="modal__footer">
+      <p>Vamos conversar sobre o seu caso?</p>
+      <a href="contactos.html" class="btn btn-primary">Marcar conversa &rarr;</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-previsao-vendas">
+  <div class="modal">
+    <div class="modal__header">
+      <button type="button" class="modal__close" data-modal-close aria-label="Fechar">&times;</button>
+      <h3>Previsão de Vendas e Procura</h3>
+      <p>Sabe quanto vai vender no próximo mês, ou quanta procura vem aí?</p>
+    </div>
+    <div class="modal__body">
+      <div class="modal__panel is-active" data-panel="previsao">
+        <p>Previsões pouco fiáveis levam a ruturas de stock que perdem vendas, a inventário parado que imobiliza capital, e a decisões de compra ou produção baseadas em intuição em vez de padrões reais de procura.</p>
+        <h4>Como esta solução se aplica ao seu negócio</h4>
+        <ul class="detail-list">
+          <li><strong>Retalho:</strong> Previsão de procura por produto e loja para otimizar reposição.</li>
+          <li><strong>Distribuição / Logística:</strong> Planeamento de stock e rotas com base na procura esperada.</li>
+          <li><strong>Indústria:</strong> Planeamento de produção alinhado com encomendas previstas.</li>
+          <li><strong>Serviços:</strong> Previsão de procura para dimensionar equipas e capacidade.</li>
+        </ul>
+        <h4>O que inclui</h4>
+        <ul class="check-list">
+          <li>Modelo de previsão ajustado à sazonalidade e tendências do seu negócio.</li>
+          <li>Previsões por produto, loja, região ou período, consoante a necessidade.</li>
+          <li>Dashboard para acompanhar previsões vs. vendas reais.</li>
+          <li>Atualização periódica do modelo com novos dados de vendas.</li>
+        </ul>
+        <p class="detail-note">"Uma boa previsão não precisa de ser perfeita — precisa de ser suficientemente fiável para reduzir o erro nas decisões de stock."</p>
+      </div>
+    </div>
+    <div class="modal__footer">
+      <p>Vamos conversar sobre o seu caso?</p>
+      <a href="contactos.html" class="btn btn-primary">Marcar conversa &rarr;</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js?v=12"></script>
 </body>
 </html>

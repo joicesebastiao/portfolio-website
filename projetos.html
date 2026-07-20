@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projetos | Joice Sebastião</title>
-<link rel="stylesheet" href="css/style.css?v=9">
+<link rel="stylesheet" href="css/style.css?v=40">
 </head>
 <body>
 
@@ -14,18 +14,17 @@
       <button class="navbar__toggle" aria-label="Abrir menu">&#9776;</button>
       <ul class="navbar__links">
         <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
         <li class="has-dropdown">
-          <a href="servicos.html">Serviços</a>
+          <a href="projetos.html" class="is-active">Projetos</a>
           <ul class="dropdown">
-            <li><a href="servicos/segmentacao-clientes.html">Segmentação de Clientes</a></li>
-            <li><a href="servicos/classificacao-risco-credito.html">Classificação de Risco de Crédito</a></li>
-            <li><a href="servicos/previsao-vendas.html">Previsão de Vendas</a></li>
+            <li><a href="projetos/segmentacao-centro-comercial.html">Clustering de Clientes</a></li>
+            <li><a href="projetos/classificação-de-risco-banca.html">Classificação de Risco de Crédito</a></li>
           </ul>
         </li>
-        <li><a href="projetos.html" class="is-active">Projetos</a></li>
         <li><a href="como-trabalhamos.html">Como Trabalhamos</a></li>
         <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="contactos.html">Contactos</a></li>
+        <li><a href="contactos.html" class="navbar__cta">Contactos</a></li>
       </ul>
     </nav>
   </div>
@@ -55,9 +54,18 @@
         </div>
         <a href="projetos/segmentacao-centro-comercial.html" class="link-arrow">Ver caso completo &rarr;</a>
       </div>
-      <div class="card">
-        <h3>Projeto em breve</h3>
-        <p>Modelo de classificação de risco de crédito. Descrição detalhada a adicionar.</p>
+      <div class="card card--project">
+        <span class="eyebrow">Microfinanças</span>
+        <h3>Classificação de Risco de Crédito</h3>
+        <div class="card__reveal">
+          <div class="card__reveal-inner">
+            <div class="card__reveal-stat">
+              <span class="num">1</span>
+              <p>modelo de classificação de risco de crédito desenvolvido para uma instituição financeira.</p>
+            </div>
+          </div>
+        </div>
+        <a href="projetos/classificação-de-risco-banca.html" class="link-arrow">Ver caso completo &rarr;</a>
       </div>
       <div class="card">
         <h3>Projeto em breve</h3>
@@ -89,6 +97,6 @@
   </div>
 </footer>
 
-<script src="js/script.js?v=3"></script>
+<script src="js/script.js?v=12"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Joice Sebastião — Dados para decisões melhores</title>
 <meta name="description" content="Ajudamos empresas a tomar decisões baseadas em dados: segmentação de clientes, classificação de risco de crédito e previsão de vendas.">
-<link rel="stylesheet" href="css/style.css?v=9">
+<link rel="stylesheet" href="css/style.css?v=38">
 </head>
 <body>
 
@@ -15,42 +15,47 @@
       <button class="navbar__toggle" aria-label="Abrir menu">&#9776;</button>
       <ul class="navbar__links">
         <li><a href="index.html" class="is-active">Página Inicial</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
         <li class="has-dropdown">
-          <a href="servicos.html">Serviços</a>
+          <a href="projetos.html">Projetos</a>
           <ul class="dropdown">
-            <li><a href="servicos/segmentacao-clientes.html">Segmentação de Clientes</a></li>
-            <li><a href="servicos/classificacao-risco-credito.html">Classificação de Risco de Crédito</a></li>
-            <li><a href="servicos/previsao-vendas.html">Previsão de Vendas</a></li>
+            <li><a href="projetos/segmentacao-centro-comercial.html">Clustering de Clientes</a></li>
+            <li><a href="projetos/classificação-de-risco-banca.html">Classificação de Risco de Crédito</a></li>
           </ul>
         </li>
-        <li><a href="projetos.html">Projetos</a></li>
         <li><a href="como-trabalhamos.html">Como Trabalhamos</a></li>
         <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="contactos.html">Contactos</a></li>
+        <li><a href="contactos.html" class="navbar__cta">Contactos</a></li>
       </ul>
     </nav>
   </div>
 </div>
 
-<header class="hero">
+<header class="launch-hero">
   <div class="container">
-    <h1>Menos incerteza, <em>mais decisões acertadas.</em></h1>
-    <p class="hero__lead">Ajudamos empresas a tomar decisões baseadas em dados que já têm — da análise de clientes à previsão de vendas e à classificação de risco de crédito.</p>
+    <div class="launch-hero__eyebrows">
+      <span>Bem vindo à</span>
+    </div>
+    <h1 class="launch-hero__title">[NOME]</h1>
+  </div>
+  <div class="container">
+    <div class="launch-hero__photo"></div>
   </div>
 </header>
 
 <section class="section">
+  <div class="container explore__inner">
+    <h2>Cada decisão certa <em>começa com os dados certos.</em></h2>
+    <a href="#objetivo" class="btn btn-outline">Explorar mais &rarr;</a>
+  </div>
+</section>
+
+<section class="narrative-block narrative-block--blue" id="objetivo">
   <div class="container">
-    <div class="image-grid">
-      <div class="image-grid__col">
-        <div class="image-grid__item image-grid__item--sm"></div>
-        <div class="image-grid__item image-grid__item--lg"></div>
-      </div>
-      <div class="image-grid__col">
-        <div class="image-grid__item image-grid__item--lg"></div>
-        <div class="image-grid__item image-grid__item--sm"></div>
-      </div>
-    </div>
+    <span class="eyebrow">O nosso objetivo</span>
+    <h2>Transformar dados em decisões inteligentes.</h2>
+    <p>Recolhemos, organizamos e analisamos os seus dados para gerar informação clara, útil e orientada para resultados.</p>
+    <a href="servicos.html" class="btn btn-outline--on-primary">Ver serviços &rarr;</a>
   </div>
 </section>
 
@@ -58,38 +63,73 @@
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="eyebrow">Serviços</span>
-        <h2>Soluções aplicadas ao seu negócio</h2>
+        <span class="eyebrow">Os nossos valores</span>
+        <h2>O que nos define em cada desafio</h2>
       </div>
     </div>
 
-    <div class="service-cards">
-      <div class="service-card">
-        <span class="service-card__ghost">01</span>
-        <h3>Segmentação de Clientes</h3>
-        <p>Como identificar os clientes certos para a campanha certa?</p>
-        <a href="servicos/segmentacao-clientes.html" class="btn btn-primary">Saber mais &rarr;</a>
+    <div class="values-grid">
+      <div class="value-card value-card--red">
+        <span class="value-card__num">01</span>
+        <div>
+          <h3>Qualidade</h3>
+          <p>Procuramos soluções rigorosas e eficazes, sem comprometer a excelência do resultado final.</p>
+        </div>
       </div>
-      <div class="service-card">
-        <span class="service-card__ghost">02</span>
-        <h3>Classificação de Risco de Crédito</h3>
-        <p>Sabe quais dos seus clientes têm mais risco de não pagar?</p>
-        <a href="servicos/classificacao-risco-credito.html" class="btn btn-primary">Saber mais &rarr;</a>
+      <div class="value-card value-card--sage">
+        <span class="value-card__num">02</span>
+        <div>
+          <h3>Inovação</h3>
+          <p>Utilizamos tecnologia e metodologias atuais para criar soluções que geram valor.</p>
+        </div>
       </div>
-      <div class="service-card">
-        <span class="service-card__ghost">03</span>
-        <h3>Previsão de Vendas</h3>
-        <p>Sabe quanto vai vender no próximo mês?</p>
-        <a href="servicos/previsao-vendas.html" class="btn btn-primary">Saber mais &rarr;</a>
+      <div class="value-card value-card--blue">
+        <span class="value-card__num">03</span>
+        <div>
+          <h3>Impacto</h3>
+          <p>Trabalhamos lado a lado consigo, focados em cumprir objetivos e superar expectativas.</p>
+        </div>
+      </div>
+      <div class="value-card value-card--olive">
+        <span class="value-card__num">04</span>
+        <div>
+          <h3>Transparência</h3>
+          <p>Resultados com explicação detalhada, documentação de apoio e orientações para implementação.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="cta-banner">
-  <div class="container cta-banner__inner">
-    <p>Fale connosco!</p>
-    <a href="contactos.html" class="btn btn-light">Marcar conversa &rarr;</a>
+<section class="narrative-block narrative-block--olive">
+  <div class="container">
+    <span class="eyebrow">Como trabalhamos</span>
+    <h2>Um processo simples pensado para elevar o seu negócio.</h2>
+    <p>Acompanhamos cada fase do projeto com clareza, proximidade e soluções ajustadas ao que realmente necessita.</p>
+    <a href="como-trabalhamos.html" class="btn btn-outline--on-primary">O nosso processo &rarr;</a>
+  </div>
+</section>
+
+<section class="home-contact">
+  <div class="container">
+    <div class="home-contact__card">
+      <h2>Vamos trabalhar juntos?</h2>
+      <form class="home-contact__form" action="mailto:contacto@joicesebastiao.pt" method="post" enctype="text/plain">
+        <div class="form-field">
+          <label for="home-nome">Nome</label>
+          <input type="text" id="home-nome" name="nome" required>
+        </div>
+        <div class="form-field">
+          <label for="home-email">Email</label>
+          <input type="email" id="home-email" name="email" required>
+        </div>
+        <div class="form-field">
+          <label for="home-mensagem">Mensagem</label>
+          <textarea id="home-mensagem" name="mensagem" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar &rarr;</button>
+      </form>
+    </div>
   </div>
 </section>
 
@@ -108,6 +148,6 @@
   </div>
 </footer>
 
-<script src="js/script.js?v=3"></script>
+<script src="js/script.js?v=12"></script>
 </body>
 </html>
