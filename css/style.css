@@ -284,7 +284,7 @@ ul {
 
 /* Hero */
 .hero {
-  background: var(--gradient-primary);
+  background: var(--color-blue);
   color: var(--on-primary);
   border-radius: 0;
   padding: 96px 0;
@@ -378,8 +378,8 @@ ul {
 }
 
 .hero h1 {
-  font-size: clamp(2.2rem, 4.8vw, 3.6rem);
-  max-width: 850px;
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+  max-width: 1000px;
   font-weight: 500;
   white-space: normal;
   margin: 0 auto 4px;
@@ -1466,8 +1466,10 @@ button.link-arrow {
 .home-contact__card {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: flex-end;
+  gap: 64px;
+  max-width: 980px;
+  margin: 0 auto;
   text-align: left;
 }
 
@@ -1530,6 +1532,57 @@ button.link-arrow {
   .final-cta {
     padding: 56px 0;
   }
+}
+
+/* FAQ */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-item {
+  border-top: 1px solid var(--line);
+  padding: 22px 0;
+}
+
+.faq-item:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 500;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-family: var(--font-sans);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-primary-dark);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-item p {
+  color: var(--text-muted);
+  max-width: 720px;
+  margin: 14px 0 0;
 }
 
 /* Footer */

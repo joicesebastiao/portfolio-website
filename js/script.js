@@ -14,6 +14,7 @@ function init() {
     '.explore__inner > *',
     '.narrative-block .container > *',
     '.values-grid > *',
+    '.faq-list > *',
     '.home-contact__card > *',
     '.section-head',
     '.service-rows > *',
