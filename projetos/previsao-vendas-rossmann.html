@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clustering de Clientes | Joice Sebastião</title>
+<title>Previsão de Vendas | Joice Sebastião</title>
 <link rel="stylesheet" href="../css/style.css?v=49">
 </head>
 <body>
@@ -33,9 +33,9 @@
 
 <header class="hero" style="padding-bottom:56px;">
   <div class="container">
-    <span class="detail-eyebrow">Projeto &middot; Centro Comercial</span>
-    <h1>Clustering de Clientes</h1>
-    <p class="hero__lead">Identificar grupos distintos de clientes com base no seu comportamento, para campanhas direcionadas e uma alocação mais eficiente de recursos comerciais.</p>
+    <span class="detail-eyebrow">Projeto &middot; Cadeia de Lojas</span>
+    <h1>Previsão de Vendas</h1>
+    <p class="hero__lead">Modelo de séries temporais para prever vendas semanais de uma cadeia de drogarias, captando sazonalidade, promoções e diferenças entre lojas para apoiar decisões de stock e operações.</p>
   </div>
 </header>
 
@@ -46,15 +46,15 @@
       <div class="project-meta project-meta--vertical">
         <div class="project-meta__item">
           <span class="label">Setor</span>
-          <span class="value">Retalho</span>
+          <span class="value">Retalho / Drogaria</span>
         </div>
         <div class="project-meta__item">
           <span class="label">Foco</span>
-          <span class="value">Modelação de Clustering</span>
+          <span class="value">Previsão de Séries Temporais</span>
         </div>
         <div class="project-meta__item">
           <span class="label">Âmbito</span>
-          <span class="value">Dados de Comportamento de Compra</span>
+          <span class="value">Dados históricos de vendas de mais de mil lojas, com promoções e indicadores de concorrência</span>
         </div>
       </div>
       <a href="../contactos.html" class="btn btn-primary project-sidebar__cta">Interessado?</a>
@@ -63,51 +63,38 @@
     <div class="project-main">
       <h4>O que foi feito</h4>
 
-      <div class="deliverable-grid">
         <div class="deliverable-card">
           <span class="deliverable-card__num">01</span>
-          <h5>Segmentos de clientes claros e acionáveis</h5>
-          <p>Grupos de clientes com perfil demográfico e comportamental bem definido, prontos a usar por equipas de marketing e comercial.</p>
+          <h5>Análise exploratória e sazonalidade</h5>
+          <p>Identificação de padrões semanais de vendas e diferenças claras de desempenho entre os quatro tipos de loja, através de visualizações e mapas de correlação.</p>
         </div>
 
         <div class="deliverable-card">
           <span class="deliverable-card__num">02</span>
-          <h5>Priorização estratégica</h5>
-          <p>Identificação de clientes com maior potencial de retorno sobre o investimento (ROI), permitindo uma melhor alocação do orçamento de marketing para os segmentos mais rentáveis.</p>
+          <h5>Engenharia de variáveis</h5>
+          <p>Criação de métricas de duração de promoções e concorrência, com testes de estacionaridade e diferenciação para preparar os dados para modelação.</p>
         </div>
 
         <div class="deliverable-card">
           <span class="deliverable-card__num">03</span>
-          <h5>Metodologia validada</h5>
-          <ul class="detail-list">
-            <li>Análise exploratória para entender os padrões dos indicadores de comportamento de compra.</li>
-            <li>Modelação com 3 algoritmos de clustering, para garantir a robustez na escolha do modelo final.</li>
-            <li>Validação com métricas quantitativas.</li>
-            <li>Interpretação de negócio de cada segmento.</li>
-          </ul>
+          <h5>Modelo SARIMA otimizado</h5>
+          <p>Seleção de parâmetros via análise ACF/PACF e comparação de modelos por AIC/BIC, captando a forte sazonalidade semanal das vendas.</p>
         </div>
-
-        <div class="deliverable-card">
-          <span class="deliverable-card__num">04</span>
-          <h5>Recomendações de negócio</h5>
-          <p>Análise estratégica orientada para o negócio, incluindo sugestões concretas de abordagem para cada grupo.</p>
-        </div>
-      </div>
 
       <h4>Resultados</h4>
 
-      <div class="results-grid">
+      <div class="results-grid results-grid--2x2">
         <div class="result-card">
-          <span class="result-card__num">5</span>
-          <p>Grupos de clientes com perfil definido em termos de comportamento e potencial de valor. </p>
+          <p>Quatro tipos de loja identificados, com padrões de vendas e rentabilidade distintos entre si.</p>
         </div>
         <div class="result-card">
-          <span class="result-card__num">1</span>
-          <p>Plano de ação por segmento, com sugestões de abordagem e nível de prioridade atribuído a cada grupo.</p>
+          <p>Vendas mais altas às segundas-feiras em períodos de promoção, e aos domingos fora deles.</p>
         </div>
         <div class="result-card">
-          <span class="result-card__num">&infin;</span>
-          <p>Dashboard interativo (Power BI), para a equipa de negócio explorar os segmentos e comparar indicadores-chave.</p>
+          <p>Promoções pontuais associadas a aumentos claros de vendas, ao contrário das promoções contínuas.</p>
+        </div>
+        <div class="result-card">
+          <p>Previsões semanais prontas a apoiar decisões de stock e planeamento por loja.</p>
         </div>
       </div>
     </div>

@@ -13,6 +13,7 @@ function init() {
     '.launch-hero__eyebrows, .launch-hero__title, .launch-hero__photo',
     '.explore__inner > *',
     '.narrative-block .container > *',
+    '.mission-block > *',
     '.values-grid > *',
     '.faq-list > *',
     '.home-contact__card > *',
@@ -25,7 +26,7 @@ function init() {
     '.detail-body > *',
     '.project-sidebar > *',
     '.project-main h4',
-    '.deliverable-grid > *',
+    '.deliverable-grid > *, .deliverable-card',
     '.results-grid > *',
     '.detail-columns > *',
   ];
@@ -48,11 +49,6 @@ function init() {
   }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
 
   revealEls.forEach((el) => revealObserver.observe(el));
-
-  // Safety net: never leave content permanently hidden if something above fails.
-  setTimeout(() => {
-    revealEls.forEach((el) => el.classList.add('is-visible'));
-  }, 2000);
 
   initModals();
 }

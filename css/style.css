@@ -594,41 +594,50 @@ ul {
   font-size: 0.84rem;
 }
 
-/* Service rows (hairline, for services page) */
-.service-row {
+/* Service rows (two-column cards, for services page) */
+.service-rows {
   display: grid;
-  grid-template-columns: 60px 1fr auto;
-  align-items: center;
-  gap: 20px;
-  padding: 28px 0;
-  border-top: 1px solid var(--line);
-  transition: padding-left 0.2s ease;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
-.service-row:last-child {
-  border-bottom: 1px solid var(--line);
+.service-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 40px 36px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .service-row:hover {
-  padding-left: 8px;
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(33, 28, 21, 0.1);
+  border-color: var(--color-primary);
 }
 
 .service-row__index {
   font-family: var(--font-serif);
-  font-size: 1.05rem;
+  font-size: 1.9rem;
   color: var(--color-primary);
+  margin-bottom: 10px;
 }
 
 .service-row h3 {
   font-size: 1.25rem;
-  margin: 0 0 4px;
+  margin: 0 0 8px;
 }
 
 .service-row p {
   color: var(--text-muted);
-  margin: 0;
+  margin: 0 0 24px;
   font-size: 0.94rem;
-  max-width: 440px;
+}
+
+.service-row .link-arrow {
+  margin-top: auto;
 }
 
 /* Service sub-heading (merged service category pages) */
@@ -956,6 +965,10 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+.results-grid--2x2 {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .result-card {
@@ -1344,6 +1357,13 @@ button.link-arrow {
   height: clamp(220px, 30vw, 380px);
   border-radius: 20px;
   background: linear-gradient(135deg, var(--color-blue) 0%, var(--color-olive) 100%);
+  overflow: hidden;
+}
+
+.launch-hero__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Homepage narrative sections */
@@ -1671,6 +1691,12 @@ button.link-arrow {
     text-align: center;
   }
 
+  .has-dropdown > a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
   .navbar__toggle {
     display: block;
   }
@@ -1715,16 +1741,9 @@ button.link-arrow {
   }
 
   .deliverable-grid,
-  .results-grid {
+  .results-grid,
+  .results-grid--2x2,
+  .service-rows {
     grid-template-columns: 1fr;
-  }
-
-  .service-row {
-    grid-template-columns: 40px 1fr;
-  }
-
-  .service-row a {
-    grid-column: 1 / -1;
-    margin-top: 6px;
   }
 }

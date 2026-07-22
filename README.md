@@ -8,21 +8,19 @@ Construído em **HTML, CSS e JavaScript puro** — sem frameworks, sem build too
 
 ```
 .
-├── index.html                          Página inicial
-├── servicos.html                       Listagem de serviços
-├── servicos/
-│   ├── segmentacao-clientes.html
-│   ├── classificacao-risco-credito.html
-│   └── previsao-vendas.html
-├── projetos.html                       Listagem de projetos/casos
+├── index.html                                    Página inicial
+├── servicos.html                                 Serviços (detalhe de cada um em modal)
+├── projetos.html                                  Listagem de projetos/casos
 ├── projetos/
-│   └── segmentacao-centro-comercial.html
+│   ├── segmentacao-centro-comercial.html          Clustering de Clientes
+│   ├── classificação-de-risco-banca.html          Classificação de Risco de Crédito
+│   └── previsao-vendas-rossmann.html              Previsão de Vendas
 ├── como-trabalhamos.html
 ├── sobre.html
 ├── contactos.html
-├── css/style.css                       Todo o design (cores, tipografia, componentes)
-├── js/script.js                        Menu mobile + animações de entrada (scroll reveal)
-└── assets/                             Imagens
+├── css/style.css                                 Todo o design (cores, tipografia, componentes)
+├── js/script.js                                  Menu mobile, modais de serviços e animações de entrada (scroll reveal)
+└── assets/                                       Imagens
 ```
 
 ## Como ver localmente
