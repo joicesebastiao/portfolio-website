@@ -51,6 +51,40 @@ function init() {
   revealEls.forEach((el) => revealObserver.observe(el));
 
   initModals();
+  initContactForms();
+}
+
+function initContactForms() {
+  document.querySelectorAll('form[action*="formspree.io"]').forEach((form) => {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'A enviar...';
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' },
+        });
+
+        if (response.ok) {
+          const success = document.createElement('div');
+          success.className = 'form-success';
+          success.innerHTML = '<h3>Agradecemos o seu contacto!</h3><p>Entraremos em contacto o mais breve possível.</p>';
+          form.replaceWith(success);
+        } else {
+          throw new Error('Form submission failed');
+        }
+      } catch (err) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+        alert('Ocorreu um erro ao enviar. Tente novamente ou envie um email diretamente.');
+      }
+    });
+  });
 }
 
 function initModals() {
