@@ -1607,42 +1607,66 @@ button.link-arrow {
 
 /* Footer */
 .footer {
-  padding: 48px 0 60px;
+  padding: 72px 0 32px;
+  background: var(--color-blue);
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.footer__row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .footer__brand {
   font-family: var(--font-serif);
-  font-size: 1.05rem;
-  color: var(--color-primary-dark);
+  font-size: 1.5rem;
+  color: var(--on-primary);
 }
 
-.footer__links {
+.footer__brand em {
+  color: var(--on-primary);
+  font-style: italic;
+}
+
+.footer__tagline {
+  margin: 14px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 320px;
+}
+
+.footer__col {
   display: flex;
-  gap: 22px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 13px;
 }
 
-.footer__links a {
-  font-size: 0.85rem;
-  color: var(--text-muted);
+.footer__col-title {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 3px;
 }
 
-.footer__links a:hover {
-  color: var(--text);
+.footer__col a {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer__col a:hover {
+  color: var(--on-primary);
 }
 
 .footer__meta {
   font-size: 0.8rem;
-  color: var(--text-muted);
-  margin-top: 22px;
+  color: rgba(255, 255, 255, 0.45);
+  margin-top: 24px;
 }
 
 /* Responsive */
@@ -1697,6 +1721,12 @@ button.link-arrow {
     width: 100%;
   }
 
+  .navbar__links a.navbar__cta {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
   .navbar__toggle {
     display: block;
   }
@@ -1745,5 +1775,18 @@ button.link-arrow {
   .results-grid--2x2,
   .service-rows {
     grid-template-columns: 1fr;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 24px;
+  }
+
+  .footer__about {
+    grid-column: 1 / -1;
+  }
+
+  .footer__tagline {
+    max-width: none;
   }
 }

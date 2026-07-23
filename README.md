@@ -1,6 +1,6 @@
-# Joice Sebastião — Portfólio
+# JS Consulting — Site
 
-Site pessoal de portefólio e serviços, focado em gestão de informação, data science e ciência atuarial.
+Site de portefólio e serviços, focado em gestão de informação, data science e ciência atuarial.
 
 Construído em **HTML, CSS e JavaScript puro** — sem frameworks, sem build tools, sem dependências. Qualquer editor de texto chega para o manter.
 
